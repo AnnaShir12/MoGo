@@ -1,0 +1,27 @@
+.our-work .container {
+    position: relative;
+}
+
+.our-work .sl-slide .sl-img {
+    border: none;
+    background-image: url(../../img/our-work/slider-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    border-radius: 50%;
+    width: 213px;
+    height: 213px;
+    margin: 0 20px 0 5px;
+}
+
+.our-work .sl-slide {
+    padding: 0px 80px;
+}
+
+@media screen and (max-width: 1200px) {
+    .our-work .sl-slide .sl-img {
+        margin: 0 0 25px 0;
+    }
+
+/*styles are defined on the page "testimonials-slider.css"
+    Слайдер Slick, стили определены в файле "testimonials-slider.css"*/

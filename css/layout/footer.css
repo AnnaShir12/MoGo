@@ -1,0 +1,237 @@
+.footer {
+    padding-top: 85px;
+    background-color: #f8f8f8;
+}
+
+.footer-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.footer-top-item {
+    max-width: 485px;
+}
+
+.footer-top-logo {
+    margin-bottom: 35px;
+}
+
+.footer-top-text {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    margin-bottom: 45px;
+}
+
+.followers-couner {
+    font-size: 14px;
+    line-height: 1.2;
+    color: rgb(51, 51, 51);
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 15px;
+}
+
+.followers-couner span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-social {
+    margin-bottom: 30px;
+
+}
+
+.footer-social span {
+
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    line-height: 1.6;
+    margin-right: 20px;
+}
+
+.footer-social svg {
+    fill: rgb(149, 225, 211);
+    margin-right: 15px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-social svg:hover {
+    fill: #40c9b0;
+}
+
+/****************************FORM*/
+form {
+    margin-bottom: 70px;
+}
+
+input[type=text] {
+    margin-right: -5px;
+    padding: 15px;
+    height: 40px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #d2d2d2;
+    font-style: italic;
+    line-height: 1.6;
+    width: 230px;
+
+}
+
+::-webkit-input-placeholder {
+    color: #d2d2d2;
+}
+
+::-moz-placeholder {
+    color: #d2d2d2;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+    color: #d2d2d2;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+    color: #d2d2d2;
+}
+
+input[type=submit] {
+    height: 40px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    border: none;
+    background-color: #95e1d3;
+    padding: 0 35px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    /* padding: 30px 35px;*/
+}
+
+input[type=submit]:hover {
+    background-color: #40c9b0;
+}
+
+/************************************/
+.footer-top-title {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.footer-top-blogs-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    cursor: pointer;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.footer-top-blogs-item img {
+    margin-right: 20px;
+}
+
+.footer-top-blogs-script {
+    font-size: 11px;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.5;
+    max-width: 193px;
+    font-weight: 700;
+}
+
+.footer-top-blogs-script span {
+    font-weight: 300;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    line-height: 1.846;
+    display: block
+}
+
+.footer-top-instagram-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2px;
+    margin-bottom: 20px;
+}
+
+.insta-view {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(51, 51, 51);
+    font-style: italic;
+    line-height: 1.846;
+
+}
+
+.footer-bottom {
+    padding: 25px 0;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.footer-bottom span {
+    color: #f38181;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer-top {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-top-logo img {
+        margin: 0 auto;
+    }
+
+    .footer form {
+        margin-bottom: 0;
+    }
+
+    .footer-top-item {
+        margin-bottom: 40px;
+    }
+
+    .footer-top-title {
+        margin-bottom: 20px;
+    }
+}
+

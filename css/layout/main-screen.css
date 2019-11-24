@@ -1,0 +1,321 @@
+.main-screen {
+    text-align: center;
+    width: 100%;
+    height: 750px;
+    position: relative;
+}
+
+.slidershow {
+    overflow: hidden;
+    width: 1200px;
+    height: 670px;
+
+}
+
+.middle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: transparent;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.slide {
+    text-align: center;
+    height: 670px;
+
+}
+
+.main-title {
+    font-size: 72px;
+    font-family: 'Kaushan Script', cursive;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.main-slogan {
+    text-transform: uppercase;
+    font-size: 150px;
+    line-height: 140px;
+    font-weight: 700;
+    color: #fff;
+    max-width: 830px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 105px;
+}
+
+.main-slogan::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.main-screen-btn {
+    color: #fff;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    padding: 12px 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.main-screen-btn:hover {
+    background: #fce38a;
+}
+
+.slider-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.bar {
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+}
+
+.slider-btn-step {
+    display: block;
+    width: 280px;
+    height: 3px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.502);
+    position: relative;
+}
+
+.slider-btn-step::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease
+}
+
+.bar:nth-child(1) > .slider-btn-step::after {
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, #f38181), color-stop(26%, #fff), to(#fff));
+    background: linear-gradient(to right, #f38181 25%, #fff 26%, #fff 100%);
+
+}
+
+.bar:nth-child(2) > .slider-btn-step::after {
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, #fff), color-stop(26%, #f38181), color-stop(50%, #f38181), color-stop(51%, #fff), to(#fff));
+    background: linear-gradient(to right, #fff 25%, #f38181 26%, #f38181 50%, #fff 51%, #fff 100%);
+}
+
+.bar:nth-child(3) > .slider-btn-step::after {
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(51%, #f38181), color-stop(75%, #f38181), color-stop(76%, #fff), to(#fff));
+    background: linear-gradient(to right, #fff 50%, #f38181 51%, #f38181 75%, #fff 76%, #fff 100%);
+}
+
+.bar:nth-child(4) > .slider-btn-step::after {
+    background: -webkit-gradient(linear, left top, right top, color-stop(75%, #fff), color-stop(76%, #f38181), to(#f38181));
+    background: linear-gradient(to right, #fff 75%, #f38181 76%, #f38181 100%);
+}
+
+.bar:hover > .slider-btn-step::after {
+    opacity: 1;
+}
+
+.slider-btn {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.702);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+
+}
+
+.numb {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 5px;
+
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.slide-card {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0%;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -75%;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .main-title {
+        font-size: 50px;
+    }
+    .main-slogan{
+        font-size: 70px;
+    }
+    .slider-btn-step{
+        width: 150px;
+    }
+    .slide{
+        height: 450px;
+    }
+    .slidershow{
+        height: 450px;
+    }
+    .main-screen{
+        height: 600px;
+    }
+}
+@media screen and (max-width: 900px) {
+
+    .main-title {
+        font-size: 40px;
+    }
+    .main-slogan{
+        font-size: 50px;
+    }
+   
+    .slide{
+        height: 400px;
+    }
+    .slidershow{
+        height: 400px;
+    }
+     .main-screen{
+        height: 700px;
+    }
+   
+}
+@media screen and (max-width: 750px) {
+
+    .main-title {
+        font-size: 30px;
+       
+    }
+
+    .main-slogan {
+        font-size: 40px;
+         line-height: 70px;
+        margin-bottom: 50px;
+    }
+
+    .main-slogan::after {
+        bottom: -5px;
+    }
+
+    .main-screen {
+        height: 550px;
+    }
+
+    .slider-btn {
+        font-size: 14px;
+        text-align:center;
+
+    }
+    .slider-btn-step{
+        width: 100px;
+    }
+
+    .numb {
+        font-size: 18px;
+
+    }
+    .slider-nav{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .bar{
+        margin: 0 5px 20px;
+    
+    }
+
+}
+@media screen and (max-width: 500px){
+    .main-title {
+        font-size: 18px;
+    }
+    .main-slogan {
+        font-size: 24px;
+      line-height: 1;
+        margin-bottom: 25px;
+    }
+.main-slogan::after {
+    bottom: -12px;
+}
+        
+    .slide{
+        height: 250px;
+    }
+    .slidershow{
+        height:250px;
+    }
+    .main-screen{
+        height: 350px;
+    }
+    .main-screen-btn {
+    font-size: 12px;
+    padding: 5px 20px;
+     
+}
+    .slider-btn-step {
+    margin-bottom: 10px;
+    }
+}

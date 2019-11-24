@@ -1,0 +1,119 @@
+.testimonial-slider {
+    background: #f8f8f8;
+
+}
+
+.testimonial-slider .container {
+    position: relative;
+}
+
+.sl-slide {
+    padding: 70px 100px;
+
+}
+
+.slick-initialized .slick-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.sl-img {
+    width: 154px;
+    height: 154px;
+    border: 3px solid #95e1d3;
+    margin-right: 50px;
+    background-image: url(../../img/icons/testimonials/SPEECH%204.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
+}
+
+.sl-text {
+    max-width: 785px;
+}
+
+.sl-desc {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+
+.author {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    padding-left: 70px;
+    position: relative;
+}
+
+.author::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.fa.fa-angle-right,
+.fa.fa-angle-left {
+    font-size: 40px;
+    border: none;
+    color: #cfcfcf;
+
+}
+
+.fa.fa-angle-right:hover,
+.fa.fa-angle-left:hover {
+    color: #7d7d7d;
+}
+
+.btn.btn-juliet {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .sl-text {
+        text-align: center;
+    }
+
+    .slick-initialized .slick-slide {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+    }
+
+    .sl-img {
+        margin: 0 0 25px 0;
+    }
+}

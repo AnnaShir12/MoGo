@@ -1,0 +1,33 @@
+.design {
+    height: 850px;
+    background-image: url(../../img/bgs/design-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.design::after {
+    content: '';
+    width: 274px;
+    height: 476px;
+    background-image: url(../../img/bgs/design-mobile-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: -90px;
+    right: 422px;
+}
+
+@media screen and (max-width: 1200px) {
+    .design::after {
+        right: 249px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .design::after {
+        right: 0;
+    }
+}
