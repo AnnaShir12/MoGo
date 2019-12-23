@@ -118,34 +118,34 @@
     display: none;
 }
 
-.mobile-menu__checkbox:checked ~ .mobile-menu__nav {
+.mobile-menu__checkbox:checked~.mobile-menu__nav {
     opacity: 1;
 }
 
-.mobile-menu__checkbox:checked ~ .mobile-menu__container {
+.mobile-menu__checkbox:checked~.mobile-menu__container {
     height: 50%;
 
 }
 
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn {
+.mobile-menu__checkbox:checked~.mobile-menu__btn {
     margin-bottom: 400px;
 }
 
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon {
     background: transparent;
 }
 
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before,
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::before,
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::after {
     top: 0;
 }
 
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::after {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
 
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::before {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }

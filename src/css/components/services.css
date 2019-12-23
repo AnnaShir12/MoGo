@@ -1,5 +1,3 @@
-.services-cards-wrap {}
-
 .services-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -86,9 +84,6 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        -ms-flex-wrap: wrap;
-
-
     }
 
     .services-card:not(:last-child) {
