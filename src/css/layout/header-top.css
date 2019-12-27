@@ -10,14 +10,8 @@
 }
 
 .mobile-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     height: auto;
     padding: 0 16px;
@@ -44,7 +38,6 @@
     background: white;
     width: 90%;
     height: 4px;
-    -webkit-transition: .4s;
     transition: .4s;
 }
 
@@ -56,7 +49,6 @@
     background: white;
     width: 100%;
     height: 4px;
-    -webkit-transition: .4s;
     transition: .4s;
 }
 
@@ -71,27 +63,17 @@
 .mobile-menu__container {
     position: static;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: center;
     height: auto;
     margin-bottom: 0;
-    -webkit-transition: .4s;
     transition: .4s;
 }
 
 .mobile-menu__list {
-    -webkit-transition: .5s;
     transition: .5s;
     margin-top: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -100,7 +82,6 @@
     text-transform: uppercase;
     font-size: 14px;
     padding-bottom: 12px;
-    -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
     margin-right: 50px;
 }
@@ -142,12 +123,10 @@
 
 .mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::after {
     transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
 }
 
 .mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::before {
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
 }
 
 @media screen and (max-width: 900px) {
@@ -164,37 +143,21 @@
         z-index: 999;
         overflow: hidden;
         opacity: 1;
-        -webkit-transition: .5s;
         transition: .5s;
     }
 
     .mobile-menu__btn {
         position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
-        -webkit-transition: .4s;
         transition: .4s;
-        -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
         order: 2;
     }
 
     .mobile-menu {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
-        -ms-flex-direction: column;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
         flex-direction: column;
-
     }
 
     .mobile-menu__list {

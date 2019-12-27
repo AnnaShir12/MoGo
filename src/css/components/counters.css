@@ -1,6 +1,5 @@
 .counters {
     background-color: #95e1d3;
-
 }
 
 .counters-wrap {
@@ -11,7 +10,6 @@
 .counters-item {
     padding: 80px 0;
     border-left: 1px solid rgba(255, 255, 255, 0.302);
-
 }
 
 .counters-item:last-child {
@@ -44,7 +42,6 @@
 
     .counters-text {
         font-size: 12px;
-
     }
 
     .counters-item {
@@ -60,11 +57,9 @@
 
     .counters-text {
         font-size: 12px;
-
     }
 
     .counters-item {
         padding: 40px 5px;
     }
 }
-
